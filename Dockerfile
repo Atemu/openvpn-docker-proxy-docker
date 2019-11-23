@@ -1,6 +1,5 @@
 FROM alpine
 
-# Install openvpn
 RUN apk --no-cache --no-progress add curl openvpn
 
 HEALTHCHECK --interval=60s --timeout=15s --start-period=120s \
