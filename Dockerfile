@@ -7,7 +7,7 @@ HEALTHCHECK --interval=60s --timeout=15s --start-period=120s \
 
 RUN mkdir /config/
 
-ENTRYPOINT openvpn \
+CMD openvpn \
                 --cd /config \
                 --config /config/ovpn \
                 --auth-user-pass /config/auth \
