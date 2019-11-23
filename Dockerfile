@@ -5,7 +5,7 @@ RUN apk --no-cache --no-progress add curl openvpn
 HEALTHCHECK --interval=60s --timeout=15s --start-period=120s \
              CMD curl -L 'https://api.ipify.org'
 
-VOLUME ["/config"]
+RUN mkdir /config/
 
 ENTRYPOINT openvpn \
                 --cd /config \
