@@ -10,6 +10,7 @@ VOLUME ["/config"]
 ENTRYPOINT openvpn \
                 --cd /config \
                 --config /config/ovpn \
+                --auth-user-pass /config/auth \
                 --inactive 3600 \
                 --keepalive 10 60 \
                 --route-delay 2 \
