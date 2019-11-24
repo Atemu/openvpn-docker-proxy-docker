@@ -1,5 +1,3 @@
-#openvpn-docker-proxy
-
 This is a Docker container that is intended to provide a VPN connection to other Docker containers that have not been configured to specifically support one.
 
 Simply run containers that you want to use this container's VPN connection with `--net=container:atemu12/openvpn-client` and their traffic will be routed through this container's VPN tunnel instead.
